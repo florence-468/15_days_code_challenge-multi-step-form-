@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Multi-step form</title>
+</head>
+<body>
+
+  <!-- Sidebar start -->
+
+   <section class="side-bar-container">
+    <div>
+      <div id="circleOne">
+        <p>1</p>
+      </div>
+        <div id="stepOneDiv">
+          <p>step 1</p>
+          <h3>your info</h3>
+        </div>
+    </div>
+
+    <div>
+      <div id="circleTwo">
+        <p>2</p>
+      </div>
+        <div id="stepTwoDiv">
+          <p>step 2</p>
+          <h3>select plans</h3>
+        </div>
+    </div>
+
+    <div>
+      <div id="circleThree">
+        <p>3</p>
+      </div>
+        <div id="stepThreeDiv">
+          <p>step 3</p>
+          <h3>add ons</h3>
+        </div>
+    </div>
+
+    <div>
+      <div id="circleFour">
+        <p>4</p>
+      </div>
+        <div id="stepfourth">
+          <p>step 4</p>
+          <h3>summary</h3>
+        </div>
+    </div>
+</section> 
+
+  <!-- Sidebar end -->
+
+  <!-- Step 1 start -->
+  <section class="form-section">
+    <div>
+        <h2> Personal info</h2>
+        <p> Please provide your name, email address, and phone number.</p>
+    </div>
+    <div>
+      <form action="#" method="post">
+        <label for="name" class="labelToBlockElement">Name</label>
+        <input type="text" id="name" name="name" placeholder=" e.g. Stephen King" required>
+
+        <label for="email" class="labelToBlockElement">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="e.g. stephenking@lorem.com" required>
+
+        <label for="phone"class="labelToBlockElement">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890" required>
+        <button>Next Step</button>
+    </form>
+    </div>
+</section>
+<!-- step 1 end -->
+
+<!-- step 2 start -->
+<section class="select-plan-sec">
+  <div id="selectplanText">
+    <h2>Select your plan</h2>
+    <p>You have the option of monthly or yearly billing.</p>
+  </div>
+  <div id="selectPlanDivs">
+    <div>
+      <div><img src="./assets/images/icon-arcade.svg" alt="icon-arcade"></div>
+      <h3>Arcade</h3>
+      <p>$9/mo</p>
+    </div>
+    <div>
+      <h3>Advanced</h3>
+      <p>$12/mo</p>
+    </div>
+    <div>
+      <div><img src="./assets/images/icon-advanced.svg" alt="advanced icon"></div>
+      <h3>Pro</h3>
+      <p>$15/mo</p>
+    </div>
+    <div>
+      <div><img src="./assets/images/icon-pro.svg" alt="pro icon"></div>
+      <p>Monthly</p>
+      <p>Yearly</p>
+    </div>
+    <div>
+      <button type="submit"> Go Back</button>
+      <button type="submit">Next Step</button>
+    </div>
+  </div>
+</section>
+
+<!-- step 2 end -->
+<section>
+  <div>
+    <h3>Pick add-ons</h3>
+    <p>Add-ons help enhance your gaming experience.</p>
+  </div>
+  <div>
+    <div>
+      <div><input type="checkbox"name="add-ons" value="service"></div>
+      <div><h3>Online service</h3></div>
+      <div><p>Access to multiplayer games</p></div>
+      <div><p> +$1/mo</p></div>
+    </div>
+    <div>
+      <div><input type="checkbox"name="add-ons" value="service"></div>
+      <div><h3> Larger storage</h3></div>
+      <div><p>Extra 1TB of cloud save</p></div>
+      <div><p>+$2/mo</p></div>
+    </div>
+    <div>
+      <div><input type="checkbox"name="add-ons" value="service"></div>
+      <div><h3>Customizable Profile</h3></div>
+      <div><p>Custom theme on your profile</p></div>
+      <div><p>+$2/mo</p></div>
+    </div>
+  </div>
+  <div>
+    <button type="submit"> Go Back</button>
+    <button type="submit">Next Step</button>
+  </div>
+</section>
+
+<section>
+  <div>
+    <h3>Finishing up</h3>
+    <p>Double-check everything looks OK before confirming.</p>
+  </div>
+
+  <!-- Dynamically add subscription and add-on selections here -->
+
+  Total (per month/year)
+
+  Go Back
+  Confirm
+
+</section>
+
+<section>
+  <div>
+    <div><img src="./assets/images/icon-thank-you.svg" alt="thank you icon"></div>
+    <h3>Thank you!</h3>
+    <p>
+      Thanks for confirming your subscription! We hope you have fun
+      using our platform. If you ever need support, please feel free
+      to email us at support@loremgaming.com.
+    </p>
+</div>
+
+</section>
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./script.js"></script>
+</body>
+</html>
