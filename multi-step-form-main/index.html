@@ -13,163 +13,357 @@
 
   <!-- Sidebar start -->
 
-   <section class="side-bar-container">
-    <div>
-      <div id="circleOne">
-        <p>1</p>
-      </div>
-        <div id="stepOneDiv">
-          <p>step 1</p>
-          <h3>your info</h3>
+   <section id="eachStepsContainer">
+     <div class="side-bar-container">
+      <div id="sideBarContainerImg">
+        <!-- <div><img src="./assets/images/bg-sidebar-desktop.svg" alt=""></div> -->
+        <div id="sideBarStepContainer">
+          <div id="sideBarCircle">1</div>
+            <div id="stepOneDiv">
+              <p>step 1</p>
+              <h3>your info</h3>
+            </div>
         </div>
-    </div>
-
-    <div>
-      <div id="circleTwo">
-        <p>2</p>
-      </div>
-        <div id="stepTwoDiv">
-          <p>step 2</p>
-          <h3>select plans</h3>
+        <div id="sideBarStepContainer">
+          <div id="sideBarCircle">2</div>
+            <div id="stepTwoDiv">
+              <p>step 2</p>
+              <h3>select plan</h3>
+            </div>
         </div>
-    </div>
-
-    <div>
-      <div id="circleThree">
-        <p>3</p>
-      </div>
-        <div id="stepThreeDiv">
-          <p>step 3</p>
-          <h3>add ons</h3>
+        <div id="sideBarStepContainer">
+          <div id="sideBarCircle">3 </div>
+            <div id="stepThreeDiv">
+              <p>step 3</p>
+              <h3>add ons</h3>
+            </div>
         </div>
-    </div>
-
-    <div>
-      <div id="circleFour">
-        <p>4</p>
-      </div>
-        <div id="stepfourth">
-          <p>step 4</p>
-          <h3>summary</h3>
+        <div id="sideBarStepContainer">
+          <div id="sideBarCircle">4</div>
+            <div id="stepfourth">
+              <p>step 4</p>
+              <h3>summary</h3>
+            </div>
         </div>
+      </div>
+     </div> 
+     
+       <!-- Sidebar end -->
+     
+       <!-- Step 1 start -->
+       <div class="form-section">
+      <div>
+          <h2> Personal info</h2>
+          <p> Please provide your name, email address, and phone number.</p>
+      </div>
+      <div>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder=" e.g. Stephen King" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="e.g. stephenking@lorem.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890" required>
+          </div>
+          <button>Next Step</button>
+      </form>
+      </div>
     </div>
-</section> 
-
-  <!-- Sidebar end -->
-
-  <!-- Step 1 start -->
-  <section class="form-section">
-    <div>
-        <h2> Personal info</h2>
-        <p> Please provide your name, email address, and phone number.</p>
-    </div>
-    <div>
-      <form action="#" method="post">
-        <label for="name" class="labelToBlockElement">Name</label>
-        <input type="text" id="name" name="name" placeholder=" e.g. Stephen King" required>
-
-        <label for="email" class="labelToBlockElement">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="e.g. stephenking@lorem.com" required>
-
-        <label for="phone"class="labelToBlockElement">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890" required>
-        <button>Next Step</button>
-    </form>
-    </div>
-</section>
+  </section>
 <!-- step 1 end -->
 
 <!-- step 2 start -->
-<section class="select-plan-sec">
-  <div id="selectplanText">
-    <h2>Select your plan</h2>
-    <p>You have the option of monthly or yearly billing.</p>
-  </div>
+<section id="eachStepsContainer">
+  <div class="side-bar-container">
+   <div id="sideBarContainerImg">
+     <!-- <div><img src="./assets/images/bg-sidebar-desktop.svg" alt=""></div> -->
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">1</div>
+         <div id="stepOneDiv">
+           <p>step 1</p>
+           <h3>your info</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">2</div>
+         <div id="stepTwoDiv">
+           <p>step 2</p>
+           <h3>select plans</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">3 </div>
+         <div id="stepThreeDiv">
+           <p>step 3</p>
+           <h3>add ons</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">4</div>
+         <div id="stepfourth">
+           <p>step 4</p>
+           <h3>summary</h3>
+         </div>
+     </div>
+   </div>
+  </div> 
+  
+    <!-- Sidebar end -->
+  
+    <!-- Step 2 start -->
+  
+
+
+<section class="select-plan-container">
+    <div class="select-plan-text">
+      <h2>Select your plan</h2>
+      <p>You have the option of monthly or yearly billing.</p>
+    </div>
   <div id="selectPlanDivs">
-    <div>
+    <div id="selectPlanBox1">
       <div><img src="./assets/images/icon-arcade.svg" alt="icon-arcade"></div>
       <h3>Arcade</h3>
       <p>$9/mo</p>
     </div>
-    <div>
+    <div id="selectPlanBox">
+      <div><img src="./assets/images/icon-advanced.svg" alt="advanced icon"></div>
       <h3>Advanced</h3>
       <p>$12/mo</p>
     </div>
-    <div>
-      <div><img src="./assets/images/icon-advanced.svg" alt="advanced icon"></div>
+    <div id="selectPlanBox">
+      <div><img src="./assets/images/icon-pro.svg" alt="pro icon"></div>
       <h3>Pro</h3>
       <p>$15/mo</p>
     </div>
+  </div>
+  <div id="monthly-yearly-toggle">
     <div>
-      <div><img src="./assets/images/icon-pro.svg" alt="pro icon"></div>
       <p>Monthly</p>
+    </div>
+    <div class="toggle-container">
+      <!-- The checkbox represents the toggle state -->
+        <input type="checkbox" class="toggle-checkbox" id="toggleCheckbox">
+      
+        <!-- The container for the toggle button -->
+        <label for="toggleCheckbox" class="toggle-container">
+      <!-- The handle that moves left/right -->
+      <div class="toggle-handle"></div>
+        </label>
+    </div>
+    <div class="yearlyParagraph">
       <p>Yearly</p>
     </div>
-    <div>
-      <button type="submit"> Go Back</button>
-      <button type="submit">Next Step</button>
-    </div>
-  </div>
-</section>
-
-<!-- step 2 end -->
-<section>
-  <div>
-    <h3>Pick add-ons</h3>
-    <p>Add-ons help enhance your gaming experience.</p>
-  </div>
-  <div>
-    <div>
-      <div><input type="checkbox"name="add-ons" value="service"></div>
-      <div><h3>Online service</h3></div>
-      <div><p>Access to multiplayer games</p></div>
-      <div><p> +$1/mo</p></div>
-    </div>
-    <div>
-      <div><input type="checkbox"name="add-ons" value="service"></div>
-      <div><h3> Larger storage</h3></div>
-      <div><p>Extra 1TB of cloud save</p></div>
-      <div><p>+$2/mo</p></div>
-    </div>
-    <div>
-      <div><input type="checkbox"name="add-ons" value="service"></div>
-      <div><h3>Customizable Profile</h3></div>
-      <div><p>Custom theme on your profile</p></div>
-      <div><p>+$2/mo</p></div>
-    </div>
-  </div>
-  <div>
-    <button type="submit"> Go Back</button>
-    <button type="submit">Next Step</button>
-  </div>
-</section>
-
-<section>
-  <div>
-    <h3>Finishing up</h3>
-    <p>Double-check everything looks OK before confirming.</p>
-  </div>
-
-  <!-- Dynamically add subscription and add-on selections here -->
-
-  Total (per month/year)
-
-  Go Back
-  Confirm
-
-</section>
-
-<section>
-  <div>
-    <div><img src="./assets/images/icon-thank-you.svg" alt="thank you icon"></div>
-    <h3>Thank you!</h3>
-    <p>
-      Thanks for confirming your subscription! We hope you have fun
-      using our platform. If you ever need support, please feel free
-      to email us at support@loremgaming.com.
-    </p>
 </div>
+      <div class="nextAndBackBtn">
+        <button type="submit" id="goBackBtn"> Go Back</button>
+        <button type="submit" id="nextStepBtn">Next Step</button>
+      </div>
+  
+</section>
+</section>
 
+
+<section id="eachStepsContainer">
+  <div class="side-bar-container">
+   <div id="sideBarContainerImg">
+     <!-- <div><img src="./assets/images/bg-sidebar-desktop.svg" alt=""></div> -->
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">1</div>
+         <div id="stepOneDiv">
+           <p>step 1</p>
+           <h3>your info</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">2</div>
+         <div id="stepTwoDiv">
+           <p>step 2</p>
+           <h3>select plans</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">3 </div>
+         <div id="stepThreeDiv">
+           <p>step 3</p>
+           <h3>add ons</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">4</div>
+         <div id="stepfourth">
+           <p>step 4</p>
+           <h3>summary</h3>
+         </div>
+     </div>
+   </div>
+  </div> 
+  
+    <!-- Sidebar end -->
+  
+    <!-- Step 3 start -->
+  
+
+
+    <section class="add-ons-container">
+      <div class="add-ons-text">
+        <h2>Pick add-ons</h2>
+        <p>Add-ons help enhance your gaming experience.</p>
+      </div>
+      <div >
+        <div class="add-ons-box">
+          <div class="add-ons-mini-box"><input type="checkbox"name="add-ons" value="service">
+            <div>
+              <h3>Online service</h3>
+              <p>Access to multiplayer games</p>
+            </div>
+        </div>
+          <div><p> +$1/mo</p></div>
+        </div>
+        <div class="add-ons-box">
+          <div class="add-ons-mini-box"><input type="checkbox"name="add-ons" value="service">
+            <div>
+              <h3> Larger storage</h3>
+              <p>Extra 1TB of cloud save</p>
+            </div>
+        </div>
+          <div><p>+$2/mo</p></div>
+        </div>
+        <div class="add-ons-box">
+          <div class="add-ons-mini-box"><input type="checkbox"name="add-ons" value="service">
+            <div>
+              <h3>Customizable Profile</h3>
+              <p>Custom theme on your profile</p>
+            </div>
+        </div>
+          <div><p>+$2/mo</p></div>
+        </div>
+      </div>
+      <div class="nextAndBackBtn">
+        <button type="submit" id="goBackBtn"> Go Back</button>
+        <button type="submit" id="nextStepBtn">Next Step</button>
+      </div>
+    </section>
+    
+</section>
+
+
+
+<section id="eachStepsContainer">
+  <div class="side-bar-container">
+   <div id="sideBarContainerImg">
+     <!-- <div><img src="./assets/images/bg-sidebar-desktop.svg" alt=""></div> -->
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">1</div>
+         <div id="stepOneDiv">
+           <p>step 1</p>
+           <h3>your info</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">2</div>
+         <div id="stepTwoDiv">
+           <p>step 2</p>
+           <h3>select plans</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">3 </div>
+         <div id="stepThreeDiv">
+           <p>step 3</p>
+           <h3>add ons</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">4</div>
+         <div id="stepfourth">
+           <p>step 4</p>
+           <h3>summary</h3>
+         </div>
+     </div>
+   </div>
+  </div> 
+  
+    <!-- Sidebar end -->
+  
+    <!-- Step 3 start -->
+  
+
+
+    <section class="finishing-container">
+      <div class="finishing-text">
+        <h2>Finishing up</h2>
+        <p>Double-check everything looks OK before confirming.</p>
+      </div>
+    
+      <!-- Dynamically add subscription and add-on selections here -->
+    
+      <!-- Total (per month/year) -->
+    
+      <div class="finishNextAndBackBtn">
+        <button type="submit" id="goBackBtn"> Go Back</button>
+        <button type="submit" id="nextStepBtn">Next Step</button>
+      </div>
+    </section>
+</section>
+
+
+<section id="eachStepsContainer">
+  <div class="side-bar-container">
+   <div id="sideBarContainerImg">
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">1</div>
+         <div id="stepOneDiv">
+           <p>step 1</p>
+           <h3>your info</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">2</div>
+         <div id="stepTwoDiv">
+           <p>step 2</p>
+           <h3>select plans</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">3</div>
+         <div id="stepThreeDiv">
+           <p>step 3</p>
+           <h3>add ons</h3>
+         </div>
+     </div>
+     <div id="sideBarStepContainer">
+       <div id="sideBarCircle">4</div>
+         <div id="stepfourth">
+           <p>step 4</p>
+           <h3>summary</h3>
+         </div>
+     </div>
+   </div>
+  </div> 
+  
+    <!-- Sidebar end -->
+  
+    <section  class="thank-you-container">
+      <div>
+        <img src="./assets/images/icon-thank-you.svg" alt="">
+      </div>
+      <div class="thank-you-text">
+        <h2>Thank you!</h2>
+        <p>
+          Thanks for confirming your subscription! We hope you have <br> fun
+          using our platform. If you ever need support, please feel <br> free
+          to email us at support@loremgaming.com.
+        </p>
+      </div>
+    </section>
+
+
+   
 </section>
 
 

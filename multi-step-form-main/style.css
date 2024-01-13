@@ -1,7 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+:root {
+    --main-font-family: 'Ubuntu', sans-serif;
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
 
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+
+  }
 *{
+    margin: 0;
+    border: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: var(--main-font-family);
+    background-color: var(--Magnolia);
+   
+}
+/* side bar styling start */
+@media screen and (max-width: 1440px){
+   #eachStepsContainer{
+    height: 460px;
+    display: flex;
+    gap: 2rem;
+    background-color: var(--White);
+    margin: 70px 210px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 1px var(--Light-gray);
+   
+   }
+   .side-bar-container{
+    width: 268px;
+    padding: 8px 12px;
+    
+   }
+   #sideBarContainerImg{
+    background-image: url("./assets/images/bg-sidebar-desktop.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: 444px;
+   padding: 2rem 1.5rem;
+   
+   border-radius: 10px;
+   } 
+   
 
+  #sideBarCircle{
+    color: var(--White);
+    display: inline-block;
+   width: 30px;
+   height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #sideBarCircle:hover {
+    background-color: var(--Light-blue);
+    color: var(--Marine-blue);
+  }
+  #sideBarStepContainer{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+  #sideBarStepContainer p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Cool-gray);
+
+  }
+  #sideBarStepContainer h3{
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--White);
+
+  }
+/* side bar styling end */
+/* form styling */
+  .form-section{
+    width: 600px;
+   
+
+   }
+   .form-section h2, .select-plan-text h2, .add-ons-text h2, .finishing-text h2, .finishing-container h2
+   {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 2rem;
+    
+    color: var(--Marine-blue);
+   }
+   .form-section p, .select-plan-text p, .add-ons-text p, .finishing-text p, .finishing-text p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0.8rem;
+    padding-bottom: 1.5rem;
+    color: var(--Cool-gray);
+   }
+   .form-group label{
+  
+    display: block;
+    margin-bottom: 8px;
+    color: #4E4E4E;
+
+}
+   .form-group input{
+    padding: 12px 8px;
+    /* border-radius: 8px; */
+    border: solid 1px var(--Cool-gray);
+    width: 450px;
+    height: 38px;
+    margin-bottom: 20px;
+   }
+   
+   .form-section label{
+    color: var(--Marine-blue);
+    font-size: 16px;
+    font-weight: 400;
+   }
+   .form-section button{
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: var(--White);
+    font-size: 16px;
+    background-color: var(--Marine-blue);
+    border: none;
+    margin-top: 1.5rem;
+    margin-left: 22.2rem;
+   
+    
+   }
+  /* ===========================styling for step 2======================= */
+  #selectPlanDivs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  #selectPlanBox,  #selectPlanBox1{
+   border: 1.5px solid var(--Magnolia);
+   border-radius: 10px;
+   width: 130px;
+   height: 150px;
+   padding-top: 16px;
+   padding-left: 16px;
+  }
+  #selectPlanBox:hover {
+    border: 1.4px solid var(--Purplish-blue);
+    cursor: pointer;
+  }
+  #selectPlanBox1{
+    border: 1.4px solid var(--Purplish-blue);
+    cursor: pointer;
+  }
+  #selectPlanBox h3,  #selectPlanBox1 h3{
+    padding-top: 38px;
+  }
+  #selectPlanBox h3,  #selectPlanBox1 h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Marine-blue);
+  }
+  #selectPlanBox p,  #selectPlanBox1 p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Cool-gray);
+  }
+  .yearlyParagraph{
+    color: var(--Cool-gray);
+  }
+
+  /* styling of monthly/ yearly toggle */
+  /* Hide the checkbox visually */
+  #monthly-yearly-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Magnolia);
+    padding-block: 8px;
+    margin-top: 2rem;
+    gap: 2rem;
+
+  }
+  #monthly-yearly-toggle p{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .toggle-checkbox {
+    display: none;
+  }
+
+  /* Style the toggle container */
+  .toggle-container {
+    position: relative;
+    width: 40px;
+    height: 18px;
+    background-color: var(--Marine-blue);
+    border-radius: 15px;
+  }
+
+  /* Style the toggle handle */
+  .toggle-handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13.8px;
+    height: 13.8px;
+    background-color: var(--White);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  /* Move the toggle handle when the checkbox is checked */
+  .toggle-checkbox:checked + .toggle-container .toggle-handle {
+    transform: translateX(25px);
+
+  }
+  .nextAndBackBtn{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 3rem;
+   
+  }
+  #nextStepBtn{
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: var(--White);
+    font-size: 16px;
+    background-color: var(--Marine-blue);
+    border: none;
+    cursor: pointer;
+    
+  }
+  #goBackBtn{
+    background-color: var(--White);
+    cursor: pointer;
+  }
+  /* ======================styling for step3============ */
+  .add-ons-box{
+    width: 450px;
+    height: 60px;
+    border: 1.2px solid var(--Purplish-blue);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .add-ons-mini-box{
+    display: flex;
+    gap: 1.5rem;
+  }
+  .add-ons-box input{
+    margin-left: 1rem;
+  }
+  .add-ons-mini-box h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Marine-blue);
+  }
+  .add-ons-mini-box p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Cool-gray);
+  }
+ 
+  .add-ons-box p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Purplish-blue);
+    margin-right: 1rem;
+  }
+
+  /* ======================= styling of step 4============== */
+
+ .finishNextAndBackBtn{
+    display: flex;
+   
+    justify-content:space-between;
+    margin-top: 17rem;
+ }
+ 
+  
+
+/* ======================= styling of step 5==================== */
+.thank-you-container, .thank-you-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.thank-you-text p{
+  text-align: center;
+  color: var(--Cool-gray);
+  font-size: 15px;
+  font-weight: 400;
+}
+.thank-you-container h2{
+    color: var(--Marine-blue);
+    font-size: 24px;
+    font-weight: 700;
+}
+}
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
+
+
+
+
+
+
+
+
+
+
+
